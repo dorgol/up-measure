@@ -21,8 +21,6 @@ sample_train %<>%
 
 
 
-hello_world
-
 sample_train_last_assessment <- sample_train %>% 
   filter(type == "Assessment" & event_code == 2000) %>% 
   arrange(installation_id, desc(timestamp)) %>% 
